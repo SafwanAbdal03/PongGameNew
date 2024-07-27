@@ -67,7 +67,7 @@ if __name__ == "__main__":
         #Ensuring that the ball bounces regardless of the part of the bat it hits
         elif Ball.distance(Left_Bat) < 55 and Ball.xcor() < -250:
             Ball.x_bounce()
-            TIME /= 2
+            TIME *= 2/3
         elif Ball.distance(Right_Bat) < 55 and Ball.xcor() > 250:
             Ball.x_bounce()
-            TIME /= 2
+            TIME *= 2/3
